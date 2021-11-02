@@ -23,7 +23,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "pages/index.js"  ],
+, "pages/index.js", "pages/api/person/[id]/index.js", "pages/api/person/[id]/vehicles.js"  ],
   "exclude": [
     "node_modules"
   ]

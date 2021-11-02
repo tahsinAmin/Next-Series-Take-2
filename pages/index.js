@@ -34,8 +34,8 @@ export default function Home({ data }) {
       </Head>
 
       <main className="w-11/12 my-12 mx-auto">
-        <table className="mx-auto border-collapse border border-green-800 ...">
-          <thead className=' bg-green-300 text-white'>
+        <table className="mx-auto">
+          <thead className='bg-green-300 text-white'>
             <tr>
               <th className="border border-green-600 px-4 py-2">Name</th>
               <th className="border border-green-600 px-4 py-2">Email</th>
