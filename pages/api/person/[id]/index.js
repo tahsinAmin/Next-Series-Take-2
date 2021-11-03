@@ -6,12 +6,11 @@ export default async function getPersonById(req, res) {
    if(req.method === 'PUT'){
       const person = await prisma.person.update({
          where: { 
-            id: parseInt(req.query.id)
-         },
-         data: { 
-            name: req.body.name,
-            email: req.body.email
-         }
+            id: parseInt(req.query.id) },
+            data: { 
+               name: req.body.name,
+               email: req.body.email
+            }
        })
    }
 
@@ -20,5 +19,6 @@ export default async function getPersonById(req, res) {
          id: parseInt(req.query.id)
       }
    })
+
    res.json(person);
 }
